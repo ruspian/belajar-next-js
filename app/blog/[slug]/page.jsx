@@ -1,6 +1,12 @@
-import getPost from "@/lib/post";
+import getPost, { getSlugs } from "@/lib/post";
 import Heading from "../../../components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
+
+// fungsi membuat data markdown jadi static
+export async function generateStaticParams() {
+  const slugs = await getSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 // fungsi generate metadata dari markdown
 export async function generateMetadata({ params: { slug } }) {
