@@ -1,6 +1,7 @@
 import getPost, { getSlugs } from "@/lib/post";
 import Heading from "../../../components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
+import Image from "next/image";
 
 // fungsi membuat data markdown jadi static
 export async function generateStaticParams() {
@@ -30,7 +31,7 @@ export default async function PostBlog({ params: { slug } }) {
       </div>
 
       {/* mengambil file di folder  public dengan langsung memanggil folder pathnya saja tanpa folder public */}
-      <img
+      <Image
         src={post.image}
         alt=""
         width={640}
