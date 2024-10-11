@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar";
 import { roboto } from "./fonts";
 
 export const metadata = {
-  title: "Situs Next JS",
-  description: "Kumpulan tutorial brlajar Next JS Fundamental",
+  title: {
+    default: "Situs Next JS",
+    template: "%s | Situs Next JS",
+  },
 };
 
 // css
