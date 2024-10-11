@@ -1,5 +1,6 @@
 import getPost from "@/lib/post";
 import Heading from "../../../components/Heading";
+import ShareLinkButton from "@/components/ShareLinkButton";
 
 // fungsi generate metadata dari markdown
 export async function generateMetadata({ params: { slug } }) {
@@ -15,9 +16,13 @@ export default async function PostBlog({ params: { slug } }) {
   return (
     <>
       <Heading>{post.title}</Heading>
-      <p className="italic text-sm pb-2">
-        {post.date} - {post.author}
-      </p>
+      <div className="flex gap-3 pb-2 items-baseline">
+        <p className="italic text-sm pb-2">
+          {post.date} - {post.author}
+        </p>
+        <ShareLinkButton />
+      </div>
+
       {/* mengambil file di folder  public dengan langsung memanggil folder pathnya saja tanpa folder public */}
       <img
         src={post.image}
