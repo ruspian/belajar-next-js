@@ -1,7 +1,19 @@
 import { writeFileSync } from "node:fs";
+import qs from "qs";
 
 // url api strapi
-const url = "http://localhost:1337/api/posts" + "?populate=*";
+const url =
+  "http://localhost:1337/api/posts" +
+  "?" +
+  qs.stringify(
+    {
+      fields: ["title", "description", "slug", "body", "publishedAt"],
+      populate: { image: { fields: ["url"] } },
+      sort: ["publishedAt:desc"],
+      pagination: { pageSize: 3 },
+    },
+    { encodeValuesOnly: true }
+  );
 
 // mengambil data dari api strapi
 const response = await fetch(url);
