@@ -2,6 +2,7 @@ import getPost, { getSlugs } from "@/lib/post";
 import Heading from "../../../components/Heading";
 import ShareLinkButton from "@/components/ShareLinkButton";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 // fungsi membuat data markdown jadi static
 export async function generateStaticParams() {
@@ -12,6 +13,11 @@ export async function generateStaticParams() {
 // fungsi generate metadata dari markdown
 export async function generateMetadata({ params: { slug } }) {
   const post = await getPost(slug);
+
+  // validasi ketika tidak ada data
+  if (!post) {
+    notFound();
+  }
   return {
     title: post.title,
     description: post.description,
@@ -20,6 +26,10 @@ export async function generateMetadata({ params: { slug } }) {
 
 export default async function PostBlog({ params: { slug } }) {
   const post = await getPost(slug);
+  if (!post) {
+    notFound();
+  }
+
   return (
     <>
       <Heading>{post.title}</Heading>
