@@ -12,7 +12,7 @@ export const metadata = {
 
 export default async function BlogPage({ searchParams }) {
   const page = parsePageParams(searchParams.page);
-  const posts = await getAllPosts(3, page);
+  const { pageCount, posts } = await getAllPosts(3, page);
   return (
     <>
       <Heading>Blog Saya</Heading>
@@ -20,7 +20,9 @@ export default async function BlogPage({ searchParams }) {
 
       <div className="flex gap-3 pb-3">
         <Link href={`/blog?page=${page - 1}`}>&lt;</Link>
-        <span>page {page}</span>
+        <span>
+          page {page} of {pageCount}
+        </span>
         <Link href={`/blog?page=${page + 1}`}>&gt;</Link>
       </div>
 

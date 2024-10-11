@@ -7,15 +7,10 @@ const url =
   "?" +
   qs.stringify(
     {
-      filters: {
-        slug: {
-          $eq: "nuxt-js",
-        },
-      },
       fields: ["title", "description", "slug", "body", "publishedAt"],
       populate: { image: { fields: ["url"] } },
       sort: ["publishedAt:desc"],
-      pagination: { pageSize: 1, withCount: false },
+      pagination: { pageSize: 3, page: 1 },
     },
     { encodeValuesOnly: true }
   );
