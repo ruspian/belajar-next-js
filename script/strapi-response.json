@@ -13,42 +13,12 @@
         "documentId": "qsc12nn3827rm44u71ng3f8c",
         "url": "/uploads/Nuxt_logo_2021_svg_9c8563c969.png"
       }
-    },
-    {
-      "id": 9,
-      "documentId": "rozrl7vyiwtzn2uv9ka2eaob",
-      "title": "Node JS",
-      "description": "Node.js adalah platform perangkat lunak yang dirancang oleh Ryan Dahl. Node.js adalah runtime untuk lingkungan JavaScript di luar peramban web yang dibangun di atas mesin JavaScript V8.[3] Node.js dapat dijalankan pada Windows, Mac OS X, dan Linux.",
-      "slug": "node-js",
-      "body": "## Sejarah\n\nRyan Dahl, pencipta Node.js\nNode.js pertama kali diciptakan dan diperkenalkan untuk pengguna pada sistem Linux pada tahun 2009. Node.js dikembangkan oleh Ryan Dahl dan disponsori oleh Joyent, perusahaan tempat ia bekerja.[4]\n\n## Kelebihan\nBerikut kelebihan-kelebihan dari peladen Node.js:[butuh rujukan]\n\n* Dengan bahasa JavaScript, ia mempermudah pembelajaran sisi belakang jika memang sudah menguasai JavaScript; pemula bahkan lebih cepat menguasainya karena dari sisi klien juga menggunakan bahasa JavaScript.\n* Adanya pertukaran kode antara klien dan peladen, yaitu server-side rendering pada kerangka JavaScript.\n* Adanya fasilitas untuk membuat aplikasi waktu nyata (realtime application).\n* Bersumber terbuka, sehingga pengguna mengetahui bagaimana proses aplikasi berjalan, mengubahnya, dan gratis dipakai.\n\n## Rilis\nRilis utama dari Node.js adalah dari repositori resmi Node.js di GitHub pada cabang master. Versi baru bernomor genap dirilis pada bulan April dan versi baru bernomor ganjil pada Oktober.\n\nPerilisan Node.js dibagi menjadi 3 fase, yaitu:\n\n* Current (saat ini),\n* Long Term Support / LTS (dukungan aktif jangka panjang), dan\n* Maintenance (pemeliharaan).\nPada setiap perilisan bernomor ganjil tidak akan pernah masuk dalam fase LTS ataupun Maintenance.[5]",
-      "publishedAt": "2024-10-11T14:59:46.102Z",
-      "image": {
-        "id": 5,
-        "documentId": "g9l02zv4sgagk72ulrueivxs",
-        "url": "/uploads/1698242399109_a0fc7835b7.png"
-      }
-    },
-    {
-      "id": 7,
-      "documentId": "bhnlbzrkmas8eknepei2mnb5",
-      "title": "Vue Js",
-      "description": "Vue.js (biasa disebut sebagai Vue; diucapkan /vjuː/, seperti view) adalah kerangka kerja JavaScript yang bersifat progresif, bersumber terbuka untuk membangun antarmuka pengguna.[5] Integrasi ke dalam proyek yang menggunakan pustaka JavaScript lainnya mudah dilakukan dengan Vue karena ia dirancang untuk bisa berjalan hanya di beberapa bagian halaman web. Vue juga bisa berfungsi sebagai kerangka kerja aplikasi web yang mampu menjalankan aplikasi single-page yang canggih. Dengan menggunakan kerangka kerja Nuxt.js, Vue.js dapat direpresentasikan secara dini dari sisi server atau biasa disebut server side rendering.",
-      "slug": "vue-js",
-      "body": "Vue dibuat oleh Evan You setelah ia bekerja di Google menggunakan AngularJS untuk beberapa proyek. Dia kemudian menyimpulkan proses berpikirnya: \"Saya pikir, bagaimana jika saya bisa mengekstrak bagian yang sangat saya sukai dari Angular dan membangun sesuatu yang sangat ringan.\"[6] Source code di-commit untuk proyek Vue tersebut pertama kali dilakukan pada Juli 2013 dan pertama kali rilis pada Februari 2014.\n\nJudul versi sering diambil dari judul manga dan anime yang sebagian besar bergenre science-fiction.",
-      "publishedAt": "2024-10-11T14:55:56.585Z",
-      "image": {
-        "id": 4,
-        "documentId": "fzf2dzdk9swp0iu6wwyggz4u",
-        "url": "/uploads/7cb22a8a9885468d96662f6ece61ceb2bc95666d_500x300_d5d42ea627.png"
-      }
     }
   ],
   "meta": {
     "pagination": {
       "page": 1,
-      "pageSize": 3,
-      "pageCount": 2,
-      "total": 5
+      "pageSize": 1
     }
   }
 }
