@@ -1,7 +1,7 @@
 import { getAllPosts } from "@/lib/post";
 import Heading from "../../components/Heading";
 import PostCard from "@/components/PostCard";
-import Link from "next/link";
+import Pagination from "@/components/Pagination";
 
 export const revalidate = 30;
 
@@ -18,13 +18,7 @@ export default async function BlogPage({ searchParams }) {
       <Heading>Blog Saya</Heading>
       <p>List blog saya</p>
 
-      <div className="flex gap-3 pb-3">
-        <Link href={`/blog?page=${page - 1}`}>&lt;</Link>
-        <span>
-          page {page} of {pageCount}
-        </span>
-        <Link href={`/blog?page=${page + 1}`}>&gt;</Link>
-      </div>
+      <Pagination href="/blog" pageCount={pageCount} page={page} />
 
       {/* looping data blog yang ada di folder content/blog */}
       {posts.map((post, index) => (
