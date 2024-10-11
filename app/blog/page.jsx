@@ -2,6 +2,8 @@ import { getAllPosts } from "@/lib/post";
 import Heading from "../../components/Heading";
 import PostCard from "@/components/PostCard";
 
+export const revalidate = 30;
+
 // membuat metadata
 export const metadata = {
   title: "Blog",

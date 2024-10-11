@@ -4,6 +4,9 @@ import ShareLinkButton from "@/components/ShareLinkButton";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+// mengambil data jika ada update
+export const revalidate = 30;
+
 // fungsi membuat data markdown jadi static
 export async function generateStaticParams() {
   const slugs = await getSlugs();
