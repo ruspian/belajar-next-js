@@ -1,6 +1,15 @@
 import getPost from "@/lib/post";
 import Heading from "../../../components/Heading";
 
+// fungsi generate metadata dari markdown
+export async function generateMetadata({ params: { slug } }) {
+  const post = await getPost(slug);
+  return {
+    title: post.title,
+    description: post.description,
+  };
+}
+
 export default async function PostBlog({ params: { slug } }) {
   const post = await getPost(slug);
   return (
